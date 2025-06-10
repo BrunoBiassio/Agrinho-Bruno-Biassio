@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando a Conexão Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Festejando a Conexão Campo e Cidade</h1>
+        <p>A cidade não vive sem o campo e vice-versa.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Compreender que um depende do outro e que os jovens do campo e os da cidade têm mais semelhanças do que
+                diferenças permitirá que as novas gerações permaneçam no meio rural e tenham orgulho da atividade que
+                desempenham.</p>
+        </section>
+
+        <section class="highlights">
+            <a href="jovens-do-campo.html" class="card-link">
+                <div class="card">
+                    <img src="jovem em um campo em forma de desenho.jpg" alt="Jovem no campo">
+                    <h3>Jovens do Campo: Raízes Fortes</h3>
+                    <p>Descubra a inovação e a dedicação que movem a juventude rural, valorizando a tradição e
+                        impulsionando o futuro do agronegócio.</p>
+                </div>
+            </a>
+
+            <a href="jovens-da-cidade.html" class="card-link">
+                <div class="card">
+                    <img src="jovem na cidade.jpg" alt="Jovem na cidade">
+                    <h3>Jovens da Cidade: Conexão Global</h3>
+                    <p>Explore como os jovens urbanos se conectam com o campo, reconhecendo a importância da produção de
+                        alimentos e da sustentabilidade.</p>
+                </div>
+            </a>
+
+            <a href="pontes-que-unem.html" class="card-link">
+                <div class="card">
+                    <img src="Ponte unindo campo e cidade.jpg" alt="Ponte unindo campo e cidade">
+                    <h3>Pontes que Unem: Semelhanças e Sinergias</h3>
+                    <p>Celebremos as afinidades, os sonhos e os desafios que aproximam os jovens de ambos os ambientes,
+                        construindo um futuro colaborativo.</p>
+                </div>
+            </a>
+
+            <a href="cultura-saberes.html" class="card-link">
+                <div class="card">
+                    <img src="Cultura e saberes compartilhados entre comunidade rural e urbana.jpg"
+                        alt="Cultura e saberes compartilhados">
+                    <h3>Cultura e Saberes Compartilhados</h3>
+                    <p>Descubra a riqueza cultural que surge da troca de conhecimentos entre as comunidades rurais e
+                        urbanas.</p>
+                </div>
+            </a>
+
+            <a href="alimentacao-sustentavel.html" class="card-link">
+                <div class="card">
+                    <img src="Alimentação saudável e sustentável.jpg" alt="Alimentação saudável e sustentável">
+                    <h3>Alimentação Sustentável</h3>
+                    <p>Conheça a jornada dos alimentos do campo à mesa e a importância de escolhas que valorizam a
+                        sustentabilidade e a saúde.</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Construindo o Futuro Juntos!</h2>
+            <p>Quer fazer parte dessa conexão? Preencha o formulário abaixo e nos conte sua história ou ideia!</p>
+
+            <div class="participate-options">
+                <button class="toggle-form-button">Envie sua Mensagem</button>
+                <button class="toggle-testimonials-button">Veja Depoimentos</button>
+            </div>
+
+            <div id="contact-form-section" class="content-section hidden">
+                <h3>Envie sua Mensagem</h3>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Sua Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div id="testimonials-section" class="content-section hidden">
+                <h3>O que as pessoas estão dizendo</h3>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Essa iniciativa é inspiradora! Ver como campo e cidade se complementam é essencial para as
+                            novas gerações."</p>
+                        <span>- Ana Paula, Estudante Universitária</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Sou produtor rural e sinto que a conexão com a cidade é fundamental para o escoamento e
+                            valorização do nosso trabalho."</p>
+                        <span>- Carlos Eduardo, Agricultor Familiar</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Participar e compartilhar minhas experiências como jovem do campo me deu muito orgulho da
+                            minha origem."</p>
+                        <span>- Bruna Lima, Jovem Empreendedora Rural</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Festejando a Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleFormButton = document.querySelector('.toggle-form-button');
+            const toggleTestimonialsButton = document.querySelector('.toggle-testimonials-button');
+            const contactFormSection = document.getElementById('contact-form-section');
+            const testimonialsSection = document.getElementById('testimonials-section');
+
+            toggleFormButton.addEventListener('click', function () {
+                contactFormSection.classList.remove('hidden');
+                testimonialsSection.classList.add('hidden');
+            });
+
+            toggleTestimonialsButton.addEventListener('click', function () {
+                testimonialsSection.classList.remove('hidden');
+                contactFormSection.classList.add('hidden');
+            });
+
+            contactFormSection.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>

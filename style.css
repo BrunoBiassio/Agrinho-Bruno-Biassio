@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #555;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #2E8B57;
+    margin: 20px 15px 10px;
+    font-size: 1.6em;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-size: 1em;
+    color: #666;
+    flex-grow: 1;
+}
+
+.call-to-action {
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.call-to-action h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #006400;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.participate-options {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.participate-options button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.participate-options button:hover {
+    background-color: #E64A2F;
+    transform: translateY(-2px);
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section.hidden {
+    display: none;
+}
+
+.content-section h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #2E8B57;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #367C39;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-left: 5px solid #2E8B57;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.testimonial-card span {
+    display: block;
+    font-weight: 600;
+    color: #006400;
+    text-align: right;
+    font-size: 0.95em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.detail-page-main {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.detail-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.detail-content h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #006400;
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detail-content h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #2E8B57;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.detail-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #FF6347;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #E64A2F;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    .highlights {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    .intro {
+        font-size: 1.05em;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .call-to-action h2 {
+        font-size: 2em;
+    }
+
+    .call-to-action p {
+        font-size: 1.1em;
+    }
+
+    .participate-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .participate-options button {
+        width: 80%;
+        max-width: none;
+    }
+
+    .contact-form button[type="submit"] {
+        width: 90%;
+        max-width: none;
+    }
+
+    .content-section h3 {
+        font-size: 1.8em;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+    }
+
+    .detail-content h3 {
+        font-size: 1.5em;
+    }
+
+    .detail-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .intro {
+        padding: 20px;
+        font-size: 0.95em;
+    }
+
+    .card h3 {
+        font-size: 1.4em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .call-to-action {
+        padding: 30px 15px;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.6em;
+    }
+
+    .call-to-action p {
+        font-size: 1em;
+    }
+
+    .participate-options button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .content-section h3 {
+        font-size: 1.5em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        font-size: 0.95em;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-card p {
+        font-size: 0.9em;
+    }
+
+    .detail-content {
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.5em;
+    }
+}
